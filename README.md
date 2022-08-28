@@ -13,7 +13,7 @@ On Windows, use the following command:
   ```bash
  keytool -genkey -v -keystore %userprofile%\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
   ```
-## Reference the keystore from the app
+## Step 2 - Reference the keystore from the app
 Create a file named [project]/android/key.properties that contains a reference to your keystore:
   ```bash
   storePassword=<password from previous step>
