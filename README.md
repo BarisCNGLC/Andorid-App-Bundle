@@ -38,19 +38,24 @@ Configure gradle to use your upload key when building your app in release mode b
          ...
    }
    ```
-   <h6> 1. Add the keystore information from your properties file before the android block:</h6>
+   <h6> 2. Find the buildTypes block:</h6>
    
    ```bash
    
-      def keystoreProperties = new Properties()
-   def keystorePropertiesFile = rootProject.file('key.properties')
-   if (keystorePropertiesFile.exists()) {
-       keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+     signingConfigs {
+       release {
+           keyAlias keystoreProperties['keyAlias']
+           keyPassword keystoreProperties['keyPassword']
+           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+           storePassword keystoreProperties['storePassword']
+       }
    }
-
-   android {
-         ...
-   }
+   buildTypes {
+       release {
+           signingConfig signingConfigs.release
+       }
+     
+     
    ```
   
 
