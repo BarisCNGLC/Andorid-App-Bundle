@@ -1,7 +1,7 @@
 # Andorid-App-Bundle
 
 
-##Step 1 - Create an upload keystore
+## Step 1 - Create an upload keystore
   
 On Mac/Linux, use the following command:
  ```bash
