@@ -58,5 +58,10 @@ Configure gradle to use your upload key when building your app in release mode b
      
    ```
   
+## Step 4 - Build an app bundle
+
+```bash
+Run flutter build appbundle
+```
 
 
