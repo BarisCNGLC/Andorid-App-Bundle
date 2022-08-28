@@ -38,20 +38,6 @@ Configure gradle to use your upload key when building your app in release mode b
 
    ```
  <h6>2. Find the buildTypes block:</h6>
-    ```bash
-    signingConfigs {
-       release {
-           keyAlias keystoreProperties['keyAlias']
-           keyPassword keystoreProperties['keyPassword']
-           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
-           storePassword keystoreProperties['storePassword']
-       }
-   }
-   buildTypes {
-       release {
-           signingConfig signingConfigs.release
-       }
-   }
-```
+  
 
 
