@@ -24,6 +24,6 @@ storeFile=<location of the key store file, such as /Users/<user name>/upload-key
 ## Step 3 - Configure signing in gradle
 
 Configure gradle to use your upload key when building your app in release mode by editing the [project]/android/app/build.gradle file.
-> Add the keystore information from your properties file before the android block:
+  <h1>Add the keystore information from your properties file before the android block:</h1>
  
 
