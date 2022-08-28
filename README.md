@@ -25,7 +25,9 @@ storeFile=<location of the key store file, such as /Users/<user name>/upload-key
 
 Configure gradle to use your upload key when building your app in release mode by editing the [project]/android/app/build.gradle file.
   <h6> 1. Add the keystore information from your properties file before the android block:</h6>
+   
    ```bash
+   
       def keystoreProperties = new Properties()
    def keystorePropertiesFile = rootProject.file('key.properties')
    if (keystorePropertiesFile.exists()) {
@@ -35,9 +37,7 @@ Configure gradle to use your upload key when building your app in release mode b
    android {
          ...
    }
-
    ```
- <h6>2. Find the buildTypes block:</h6>
   
 
 
