@@ -1,7 +1,7 @@
 # Andorid-App-Bundle
 
 
-<b1>Create an upload keystore</b1>
+<b2>Create an upload keystore</b2>
   <p>If you have an existing keystore, skip to the next step. If not, create one by either:
 
 Following the Android Studio key generation steps
