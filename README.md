@@ -64,7 +64,7 @@ Configure gradle to use your upload key when building your app in release mode b
 Run flutter build appbundle
 ```
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Source
+[MIT](https://docs.flutter.dev/deployment/android)
 
 
