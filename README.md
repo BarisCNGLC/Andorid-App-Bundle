@@ -36,7 +36,7 @@ Configure gradle to use your upload key when building your app in release mode b
          ...
    }
 
-```
+   ```
  <h6>2. Find the buildTypes block:</h6>
     ```bash
     signingConfigs {
