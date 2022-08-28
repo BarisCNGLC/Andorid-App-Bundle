@@ -65,6 +65,6 @@ Run flutter build appbundle
 ```
 
 ## Source
-[MIT](https://docs.flutter.dev/deployment/android)
+[FlutterDocs](https://docs.flutter.dev/deployment/android)
 
 
